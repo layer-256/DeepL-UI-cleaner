@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "DeepL cleaner ui",
+  "version": "1.0",
+  "description": "removes non necessery buttons, footer, header and fuck ton of ads for DeepL translate website so it will look more minimalistic and practical, enjoy",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.deepl.com/*"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+
+/* Removes developer toolbar */
+div[data-layout-id="textarea-layout-side-panel"] {
+	display: none !important;
+}
+
+/* Removes a pile of junk ads under the translator */
+.homeExperience_homeExperience__CbCk1 {
+	display: none !important;
+}
+
+footer, header {
+	display: none !important;
+}
+
+/* Removes the empty white space below the page content */
+div[data-layout-id="mainSectionWrapper"] {
+	min-height: 100vh !important;
+}
+
+/* Removes a panel with a choice between voice APIs and files */
+div[data-layout-id="translatorTabList"] {
+	display: none !important;
+}
+
+/* Removes “Share” button in the finished translation */
+div[data-testid="translator-target-toolbar-share-popup"] {
+	display: none !important;
+}
+
+
+
+
+/* Aligns translator window to the center of the page  */
+/* gemini code */
+div[data-layout-id="mainSectionWrapper"] {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; 
+    align-items: center !important; 
+    min-height: 100vh !important;
+    box-sizing: border-box !important;
+}
+div[data-layout-id="mainSectionWrapper"] > div {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+/* /gemini */
+
+
+
+
+/* Removes text below the main placeholder on the left side */
+span[class="app:hidden mobile:hidden [&_:nth-child(1)]:font-semibold [&_:nth-child(2)]:pt-7 [&_:nth-child(2)]:text-base"] div:nth-child(2) {
+	display: none !important;
+}
